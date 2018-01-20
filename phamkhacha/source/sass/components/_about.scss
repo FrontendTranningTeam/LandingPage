@@ -1,0 +1,38 @@
+.about {
+  margin-bottom: 50px;
+  &__heading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__subheading {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    .orange {
+      color: $orange;
+    }
+  }
+  &__list {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-bottom: 15px;
+    @include clearfix;
+  }
+  &__list-item {
+    width: 50%;
+    float: left;
+    padding: 5px 0;
+    @include respond-to('phone-and-down') {
+      width: 100%;
+    }
+  }
+}

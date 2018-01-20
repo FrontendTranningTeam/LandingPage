@@ -1,0 +1,26 @@
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/animate';
+
+@import 'base/typography';
+@import 'base/colors';
+@import 'base/images';
+
+@import 'vendors/bootstrap-override-variable';
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'font-awesome';
+
+@import 'components/table';
+@import 'components/section';
+@import 'components/about';
+@import 'components/service';
+@import 'components/button';
+@import 'components/banner';
+
+@import 'layout/body';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'page/index';

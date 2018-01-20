@@ -1,0 +1,24 @@
+body {
+  font-family: $opensans;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+input,
+button {
+  &,
+  &:focus {
+    outline: 0;
+  }
+}
+a {
+  &,
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+}

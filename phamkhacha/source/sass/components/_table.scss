@@ -1,0 +1,37 @@
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  &__col {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 10px;
+    border: 1px solid $gray-border;
+    background-color: $white;
+    color: $gray-text;
+    &--first {
+      width: 250px;
+      font-weight: 600;
+    }
+    @include respond-to('phone-and-down') {
+      &--first {
+        width: 100px;
+      }
+    }
+  }
+  &__link {
+    &,
+    &:hover {
+      color: $orange;
+      text-decoration: underline;
+    }
+  }
+}
+.tbl-2 {
+  margin-left: -10px;
+  &__col {
+    padding: 5px 10px;
+    &--last {
+      font-weight: 700;
+    }
+  }
+}
