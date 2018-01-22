@@ -1,0 +1,41 @@
+.service {
+  height: calc(100% - 60px);
+  border: 1px solid $gray-border;
+  padding: 15px;
+  margin-bottom: 60px;
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  }
+  &__imgwrap {
+    display: block;
+    width: 100%;
+    max-width: 210px;
+    height: 211px;
+    margin: 0 auto 25px;
+    overflow: hidden;
+    position: relative;
+  }
+  &__img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top .1s ease-in-out;
+  }
+  &__imgwrap:hover > &__img {
+    top: -211px;
+  }
+  &__title {
+    height: 50px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 25px;
+    color: $orange;
+  }
+  &__desc {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 22px;
+    color: $gray;
+  }
+}

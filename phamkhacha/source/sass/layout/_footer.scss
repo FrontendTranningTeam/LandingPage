@@ -1,0 +1,12 @@
+.footer {
+  padding: 32px 0 20px;
+  background: url('../images/footer-bg.png') repeat-x, $blue-darker;
+  &__text {
+    text-align: center;
+    font-family: $opensans;
+    font-size: 12px;
+    line-height: 20px;
+    color: $white;
+    margin-bottom: 0;
+  }
+}

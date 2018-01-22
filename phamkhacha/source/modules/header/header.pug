@@ -1,0 +1,24 @@
+mixin header
+  header.header
+    .language
+      a.language__link(href="http://vnext.vn/")
+        img.language__img(src="images/jp-flag.png", alt="")
+      a.language__link(href="http://vnext.vn")
+        img.language__img(src="images/vn-flag.png", alt="")
+    .container
+      .header__inner
+        a.logo(href="/")
+          img.logo__img(src="images/logo.png", alt="logo")
+        span.menu-btn.js-menu-btn
+          i.fa.fa-bars
+        ul.menu.js-menu-dropdown
+          li.menu__item
+            a.menu__link.js-menu-link(href="#!" data-target=".js-section1") VỀ CHÚNG TÔI
+          li.menu__item
+            a.menu__link.js-menu-link(href="#!" data-target=".js-section2") CÔNG NGHỆ
+          li.menu__item
+            a.menu__link.js-menu-link(href="#!" data-target=".js-section3") DỊCH VỤ
+          li.menu__item
+            a.menu__link.js-menu-link(href="#!") SẢN PHẨM
+          li.menu__item
+            a.menu__link.js-menu-link(href="#!" data-target=".js-section4") LIÊN HỆ

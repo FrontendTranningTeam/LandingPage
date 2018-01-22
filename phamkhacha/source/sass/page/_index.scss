@@ -1,0 +1,39 @@
+.welcome-img {
+  width: 100%;
+}
+.contact {
+  &__title {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+}
+.social {
+  @include clearfix;
+  &__link {
+    display: flex;
+    width: 39px;
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    color: $gray-text;
+    font-size: 16px;
+    &--facebook {
+      color: $blue-facebook;
+      &:hover {
+        color: $blue-facebook;
+        background-color: $gray-border;
+      }
+    }
+    &--twitter {
+      color: $blue-twitter;
+      &:hover {
+        color: $blue-twitter;
+        background-color: $gray-border;
+      }
+    }
+  }
+}
