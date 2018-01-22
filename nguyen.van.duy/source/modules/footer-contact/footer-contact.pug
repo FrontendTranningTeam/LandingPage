@@ -1,0 +1,15 @@
+mixin footer-contact(heading, item1, item2, item3, item4)
+  .footer-contact
+    h2.footer-contact__heading.footer__heading #{heading}
+    ul.footer-contact__list
+      li.footer-contact__item
+        i.footer-contact__icon.fa.fa-map-marker
+        | #{item1}
+      li.footer-contact__item
+        i.footer-contact__icon.fa.fa-phone
+        | #{item2}
+      li.footer-contact__item
+        | #{item3}
+      li.footer-contact__item
+        i.footer-contact__icon.fa.fa-fax
+        | #{item4}

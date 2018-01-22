@@ -1,0 +1,14 @@
+mixin new
+  .new
+    .container
+      .title.text-center 情報一覧
+      .new__content
+        ul.new__lists
+          each item in [1, 2, 3, 4, 5]
+            li.new__list
+              a.new__link(href="")
+                span.new__time 2017/12/04
+                | 【2017年11月08日～10日】「第7回モバイル活用展【秋】」出展のお知らせ
+        a.new__more(href="")
+          | ニュース一覧
+          i.fa.fa-long-arrow-right

@@ -1,0 +1,21 @@
+include modules/_page-list/_page-list
+include modules/head/head
+include modules/header/header
+include modules/intro/intro
+include modules/service/service
+include modules/new/new
+include modules/member/member
+include modules/stats/stats
+include modules/footer/footer
+
+doctype html
+html
+  +head(head.home)
+  body
+    +header
+    +intro
+    +service
+    +new
+    +member
+    +stats
+    +footer

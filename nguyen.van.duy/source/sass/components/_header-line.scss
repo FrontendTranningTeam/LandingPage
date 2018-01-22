@@ -1,0 +1,38 @@
+.header-line {
+  border-top: solid 5px $orange-daker;
+  margin-bottom: 20px;
+  @include respond-to('phone-and-down') {
+    background-color: $orange-daker;
+  }
+  &__wrap {
+    position: relative;
+  }
+  &__lists {
+    text-align: center;
+    float: right;
+    margin-right: 50px;
+    @include respond-to('phone-and-down') {
+      padding-top: 2px;
+      padding-bottom: 6px;
+      float: none;
+      margin: 0;
+    }
+  }
+  &__list {
+    display: inline-block;
+    color: $white;
+    margin: 0 6px;
+  }
+  &__icon {
+    margin-right: 3px;
+  }
+  &__background {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    z-index: -1;
+    @include respond-to('phone-and-down') {
+      display: none;
+    }
+  }
+}

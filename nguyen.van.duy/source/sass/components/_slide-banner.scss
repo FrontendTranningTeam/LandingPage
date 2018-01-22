@@ -1,0 +1,25 @@
+.slide-banner {
+  margin-bottom: 10px;
+}
+#slide-banner {
+  .owl-dots {
+    margin-top: -40px;
+    position: relative;
+    z-index: 9999;
+  }
+  .owl-dot {
+    span {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: solid 1px $white;
+      border-radius: 50%;
+      background: transparent;
+    }
+  }
+  .active {
+    span {
+      background-color: $white;
+    }
+  }
+}

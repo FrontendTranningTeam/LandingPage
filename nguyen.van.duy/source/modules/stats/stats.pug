@@ -1,0 +1,20 @@
+mixin stats
+  .stats
+    .container-fluid
+      .row
+        .stats__col.col-sm-3
+          .stats__element.stats__element--name
+            h1.stats__number(data-from="0" data-to="120" data-speed="5000" data-refresh-interval="50" waypoint-active="yes")
+            p.stats__text 名
+        .stats__col.col-sm-3
+          .stats__element.stats__element--project
+            h1.stats__number(data-from="0" data-to="150" data-speed="5000" data-refresh-interval="50" waypoint-active="yes")
+            p.stats__text プロジェクト
+        .stats__col.col-sm-3
+          .stats__element.stats__element--brse
+            h1.stats__number(data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50" waypoint-active="yes")
+            p.stats__text BrSE
+        .stats__col.col-sm-3
+          .stats__element.stats__element--years
+            h1.stats__number(data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50" waypoint-active="yes")
+            p.stats__text 年間

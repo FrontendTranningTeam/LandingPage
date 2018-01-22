@@ -1,0 +1,56 @@
+include ../footer-contact/footer-contact
+
+mixin footer()
+  footer.footer
+    .container
+      .row
+        .col-md-3
+          .footer__wrap
+            .footer__heading 株式会社ヴィーネクスト
+            ul.footer__list
+              li.footer__item
+                a.footer__link(href="") トップ
+              li.footer__item
+                a.footer__link(href="") サービス
+                ul.footer__list.footer__list--child
+                  li.footer__item.footer__item--child
+                    a.footer__link(href="") ラボ型開発
+                  li.footer__item.footer__item--child
+                    a.footer__link(href="") Webシステム開発
+                  li.footer__item.footer__item--child
+                    a.footer__link(href="") スマートフォンアプリ開発
+                  li.footer__item.footer__item--child
+                    a.footer__link(href="") AI分野における研究開発
+              li.footer__item
+                a.footer__link(href="") ヴィーネクストの強み
+                ul.footer__list.footer__list--child
+                  li.footer__item.footer__item--child
+                    a.footer__link(href="") 開発プロセス
+                  li.footer__item.footer__item--child
+                    a.footer__link(href="") 日本語能力
+                  li.footer__item.footer__item--child
+                    a.footer__link(href="") コアメンバー紹介
+              li.footer__item
+                a.footer__link(href="") ニュース
+              li.footer__item
+                a.footer__link(href="") 企業情報
+                ul.footer__list.footer__list--child
+                  li.footer__item.footer__item--child
+                    a.footer__link(href="") 会社概要
+                  li.footer__item.footer__item--child
+                    a.footer__link(href="") 代表あいさつ
+        .col-md-3
+          .footer__wrap
+            +footer-contact('本社', '18th Floor, Central Point Office Building, 219 Trung Kinh Str, Cau Giay Dist, Ha Noi', '+84-24-3765-9555', '副社長　森　周平', '+84-24-3765-6111')
+        .col-md-3
+          .footer__wrap
+            +footer-contact('日本法人　株式会社ジーネクスト', '〒102-0072 東京都千代田区飯田橋4-7-1 ロックビレイビル5F', '03-5962-5170', '海外事業部　トラン・グオク・ソン', 'www.gnext.co.jp')
+        .col-md-3
+          .footer__wrap
+            .footer__heading FACEBOOK
+            .footer__facebook
+              iframe.footer__iframe(src="https://www.facebook.com/plugins/like_box.php?app_id=&channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df219b7df75f43c%26domain%3Dvnext.vn%26origin%3Dhttp%253A%252F%252Fvnext.vn%252Ff3a49deb3def998%26relation%3Dparent.parent&container_width=288&header=false&height=360&href=https%3A%2F%2Fwww.facebook.com%2Fvnextsoftwarejsc&locale=ja_JP&sdk=joey&show_faces=true&stream=false&width=270", frameborder="0")
+    .footer__bottom.text-center
+      p.footer__text Copyright ©2016 V-NEXT All Rights Reserved.
+  //- Main js
+  script(type='text/javascript', src='js/main.js')

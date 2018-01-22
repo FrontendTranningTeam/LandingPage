@@ -1,0 +1,24 @@
+include ../header-line/header-line
+include ../slide-banner/slide-banner
+
+mixin header
+  .header
+    +header-line
+    .container
+      .header__wrap
+        .header__logo
+          a.header__link(href="")
+            img.header__image(src="../../images/logo.svg", alt="")
+        ul.header__menu.js-header__menu
+          li.header__item
+            a.header__link(href="") サービス
+          li.header__item
+            a.header__link(href="") ヴィーネクストの強み
+          li.header__item
+            a.header__link(href="") ニュース
+          li.header__item
+            a.header__link(href="") 企業情報
+        button.header__button.js-header__button
+          each item in [1, 2, 3]
+            span.header__bar
+  +slide-banner

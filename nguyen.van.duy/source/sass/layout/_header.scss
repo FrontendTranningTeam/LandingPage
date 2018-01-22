@@ -1,0 +1,59 @@
+.header {
+  padding-bottom: 20px;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    @include respond-to('phone-and-down') {
+      flex-wrap: wrap;
+      position: relative;
+    }
+  }
+  &__image {
+    width: 100px;
+    @include respond-to('phone-and-down') {
+      width: 60px;
+    }
+  }
+  &__menu {
+    margin-left: auto;
+    margin-right: -13px;
+    @include respond-to('phone-and-down') {
+      display: none;
+      width: 100%;
+      margin: 0;
+      margin-top: 30px;
+    }
+  }
+  &__item {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0 13px;
+    @include respond-to('phone-and-down') {
+      display: block;
+      border-bottom: solid 1px $gray-95;
+      padding: 10px 0;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  &__button {
+    display: none;
+    @include respond-to('phone-and-down') {
+      display: inline-block;
+      border: none;
+      background-color: transparent;
+      position: absolute;
+      top: 15px;
+      right: 0;
+    }
+  }
+  &__bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $gray-20;
+    margin-bottom: 6px;
+  }
+}

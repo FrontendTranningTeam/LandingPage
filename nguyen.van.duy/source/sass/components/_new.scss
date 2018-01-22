@@ -1,0 +1,23 @@
+.new {
+  background-color: $gray-95;
+  padding: 50px 0;
+  &__content {
+    margin-top: 50px;
+  }
+  &__lists {
+    margin-bottom: 55px;
+  }
+  &__list {
+    font-size: 15px;
+    color: $gray-20;
+    border-bottom: dashed 1px $gray-85;
+    padding: 9px 0;
+  }
+  &__time {
+    margin-right: 20px;
+  }
+  &__more {
+    font-weight: 600;
+    float: right;
+  }
+}
